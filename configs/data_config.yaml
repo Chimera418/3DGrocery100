@@ -1,0 +1,114 @@
+# =============================================================================
+# 3DGrocery100 — Common Data Pipeline Configuration
+# =============================================================================
+# ALL four model tracks (PointNet, PointNet++, DGCNN, PointMLP) must use
+# this single config file. Do not change seed, split paths, or n_points
+# without team agreement.
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Dataset paths  (use forward slashes; relative paths resolve from project root)
+# ---------------------------------------------------------------------------
+dataset:
+  # Root of the raw dataset folder — READ-ONLY, never modified
+  raw_root: "C:/Users/anees/Desktop/Clubs/MISC/misc projects/Groceries Project Datasets/3DGrocery100"
+
+  # Where processed/derived files are stored
+  processed_root: "data/processed"
+
+  # Subdatasets available
+  subdatasets:
+    - name: "3DGrocery100"
+      prefix: "modelnet100"
+      n_classes: 100
+
+# ---------------------------------------------------------------------------
+# Data format
+# ---------------------------------------------------------------------------
+data:
+  # Number of points per sample (fixed for the whole project)
+  n_points: 1024
+
+  # Available channel modes: "xyz" (3-channel) or "xyzrgb" (6-channel)
+  # Individual model owners choose which to use at DataLoader instantiation.
+  default_mode: "xyzrgb"
+
+  # Whether the dataset contains pre-sampled FPS data
+  # (True = load directly from .dat without re-sampling)
+  pre_sampled_fps: true
+
+  # Source .dat files (relative to raw_root)
+  train_dat: "modelnet100_train_1024pts_fps.dat"
+  test_dat:  "modelnet100_test_1024pts_fps.dat"
+
+  # Source split .txt files (relative to raw_root)
+  train_txt: "modelnet100_train.txt"
+  test_txt:  "modelnet100_test.txt"
+
+  # Class-name list file (relative to raw_root)
+  shape_names_file: "modelnet100_shape_names.txt"
+
+# ---------------------------------------------------------------------------
+# Normalization
+# NOTE: The .dat files already contain per-object unit-sphere normalization
+# (centred at object centroid, scaled to unit sphere).
+# apply_normalization=true means the Dataset class will RE-APPLY centroid
+# centering + unit-sphere scaling at load time to guarantee consistency.
+# Set to false if you want to use the pre-stored values exactly as-is.
+# ---------------------------------------------------------------------------
+normalization:
+  apply_normalization: true   # re-apply at Dataset.__getitem__ time
+  normalize_xyz_only: true    # never touch RGB channels
+  method: "unit_sphere"       # centroid-center then divide by max L2 distance
+
+# ---------------------------------------------------------------------------
+# Sampling
+# The dataset already contains 1024-point Farthest Point Sampling (FPS).
+# The pipeline does NOT re-sample from raw meshes.
+# If a future sub-dataset has a different point count, the pipeline will
+# downsample (random without replacement) or upsample (random with replacement)
+# to reach n_points=1024.
+# ---------------------------------------------------------------------------
+sampling:
+  n_points: 1024
+  method: "fps"               # "fps" = original dataset FPS; "random" = fallback
+  upsample_method: "repeat"   # strategy when n < 1024: "repeat" (deterministic)
+  downsample_method: "random" # strategy when n > 1024: "random" (seeded)
+  seed: 42
+
+# ---------------------------------------------------------------------------
+# Fixed train/test split
+# Generated once and frozen. Model owners MUST use these files.
+# ---------------------------------------------------------------------------
+splits:
+  train_json: "data/processed/splits/train.json"
+  test_json:  "data/processed/splits/test.json"
+
+# ---------------------------------------------------------------------------
+# Labels
+# ---------------------------------------------------------------------------
+labels:
+  labels_json: "data/processed/labels.json"
+
+# ---------------------------------------------------------------------------
+# Reproducibility seed — used for Python random, NumPy, and PyTorch
+# ---------------------------------------------------------------------------
+seed: 42
+
+# ---------------------------------------------------------------------------
+# DataLoader defaults (model owners can override batch_size)
+# ---------------------------------------------------------------------------
+dataloader:
+  batch_size: 32
+  num_workers: 4       # set to 0 on Windows if multiprocessing issues arise
+  pin_memory: true
+  shuffle_train: true
+  shuffle_test: false
+
+# ---------------------------------------------------------------------------
+# Paths for generated reports and visualizations
+# ---------------------------------------------------------------------------
+outputs:
+  reports_dir: "reports"
+  visualizations_dir: "results/visualizations"
+  logs_dir: "logs"

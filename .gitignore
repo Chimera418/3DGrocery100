@@ -1,0 +1,68 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Pytest / coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── OS artefacts ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Raw dataset (large binary files — NOT tracked in git) ────────────────────
+# The raw .dat files are several GB each; store them separately.
+# Team members must download them from the shared drive and configure
+# configs/data_config.yaml with the correct local path.
+data/raw/
+*.dat
+*.h5
+*.hdf5
+*.ply
+*.pcd
+*.bin
+
+# ── Processed split JSONs (re-generable via prepare_dataset.py) ──────────────
+# Keeping these OUT of git keeps the repo lightweight.
+# Run:  python scripts/prepare_dataset.py
+# to regenerate them locally after cloning.
+data/processed/splits/
+
+# ── Large report CSVs (keep JSON summaries, skip big row-level CSVs) ─────────
+reports/data_validation_report_*.csv
+reports/point_count_statistics_*.csv
+reports/dataset_statistics.csv
+
+# ── Model checkpoints / weights ──────────────────────────────────────────────
+*.pth
+*.pt
+*.ckpt
+results/checkpoints/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

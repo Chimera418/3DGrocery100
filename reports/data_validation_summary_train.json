@@ -1,0 +1,8 @@
+{
+  "split": "train",
+  "total": 66032,
+  "valid": 66032,
+  "warning": 0,
+  "rejected": 0,
+  "acceptance_rate_pct": 100.0
+}

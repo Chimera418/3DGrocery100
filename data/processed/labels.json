@@ -1,0 +1,402 @@
+{
+  "0": {
+    "name": "apple-fuji",
+    "category": "fruit_apple"
+  },
+  "1": {
+    "name": "apple-golden-delicious",
+    "category": "fruit_apple"
+  },
+  "2": {
+    "name": "apple-granny-smith",
+    "category": "fruit_apple"
+  },
+  "3": {
+    "name": "apple-honeycrisp",
+    "category": "fruit_apple"
+  },
+  "4": {
+    "name": "apple-evercrisp",
+    "category": "fruit_apple"
+  },
+  "5": {
+    "name": "apple-pazazz",
+    "category": "fruit_apple"
+  },
+  "6": {
+    "name": "apple-pink-lady",
+    "category": "fruit_apple"
+  },
+  "7": {
+    "name": "apple-red-delicious",
+    "category": "fruit_apple"
+  },
+  "8": {
+    "name": "apple-royal-gala",
+    "category": "fruit_apple"
+  },
+  "9": {
+    "name": "apple-wild-twist",
+    "category": "fruit_apple"
+  },
+  "10": {
+    "name": "avocado",
+    "category": "fruit_other"
+  },
+  "11": {
+    "name": "banana",
+    "category": "fruit_other"
+  },
+  "12": {
+    "name": "bartlett-pear",
+    "category": "fruit_other"
+  },
+  "13": {
+    "name": "cantaloupe",
+    "category": "fruit_other"
+  },
+  "14": {
+    "name": "coconut",
+    "category": "fruit_other"
+  },
+  "15": {
+    "name": "coconut2",
+    "category": "fruit_other"
+  },
+  "16": {
+    "name": "danjou-pear",
+    "category": "fruit_other"
+  },
+  "17": {
+    "name": "dragonfruit",
+    "category": "fruit_other"
+  },
+  "18": {
+    "name": "grapefruit",
+    "category": "fruit_other"
+  },
+  "19": {
+    "name": "honeydew-melon",
+    "category": "fruit_other"
+  },
+  "20": {
+    "name": "kiwi",
+    "category": "fruit_other"
+  },
+  "21": {
+    "name": "lemon",
+    "category": "fruit_other"
+  },
+  "22": {
+    "name": "lime",
+    "category": "fruit_other"
+  },
+  "23": {
+    "name": "mango",
+    "category": "fruit_other"
+  },
+  "24": {
+    "name": "navel-orange",
+    "category": "fruit_other"
+  },
+  "25": {
+    "name": "nectarine",
+    "category": "fruit_other"
+  },
+  "26": {
+    "name": "papaya",
+    "category": "fruit_other"
+  },
+  "27": {
+    "name": "peach",
+    "category": "fruit_other"
+  },
+  "28": {
+    "name": "pear-bosc",
+    "category": "fruit_other"
+  },
+  "29": {
+    "name": "pineapple",
+    "category": "fruit_other"
+  },
+  "30": {
+    "name": "plums",
+    "category": "fruit_other"
+  },
+  "31": {
+    "name": "pomegranate",
+    "category": "fruit_other"
+  },
+  "32": {
+    "name": "red-pear",
+    "category": "fruit_other"
+  },
+  "33": {
+    "name": "watermelon",
+    "category": "fruit_other"
+  },
+  "34": {
+    "name": "artichokes",
+    "category": "vegetable"
+  },
+  "35": {
+    "name": "broccoli",
+    "category": "vegetable"
+  },
+  "36": {
+    "name": "cucumber",
+    "category": "vegetable"
+  },
+  "37": {
+    "name": "eggplant",
+    "category": "vegetable"
+  },
+  "38": {
+    "name": "garlic",
+    "category": "vegetable"
+  },
+  "39": {
+    "name": "ginger",
+    "category": "vegetable"
+  },
+  "40": {
+    "name": "green-bell-pepper",
+    "category": "vegetable"
+  },
+  "41": {
+    "name": "green-cabbage",
+    "category": "vegetable"
+  },
+  "42": {
+    "name": "jalapeno",
+    "category": "vegetable"
+  },
+  "43": {
+    "name": "orange-bell-pepper",
+    "category": "vegetable"
+  },
+  "44": {
+    "name": "potato",
+    "category": "vegetable"
+  },
+  "45": {
+    "name": "red-bell-pepper",
+    "category": "vegetable"
+  },
+  "46": {
+    "name": "red-cabbage",
+    "category": "vegetable"
+  },
+  "47": {
+    "name": "redonion",
+    "category": "vegetable"
+  },
+  "48": {
+    "name": "red-potato",
+    "category": "vegetable"
+  },
+  "49": {
+    "name": "rutabagas",
+    "category": "vegetable"
+  },
+  "50": {
+    "name": "squash-acorn",
+    "category": "vegetable"
+  },
+  "51": {
+    "name": "squash-butternut",
+    "category": "vegetable"
+  },
+  "52": {
+    "name": "squash-spaghetti",
+    "category": "vegetable"
+  },
+  "53": {
+    "name": "squash-yellow",
+    "category": "vegetable"
+  },
+  "54": {
+    "name": "sweet-potato",
+    "category": "vegetable"
+  },
+  "55": {
+    "name": "tomato",
+    "category": "vegetable"
+  },
+  "56": {
+    "name": "turnip",
+    "category": "vegetable"
+  },
+  "57": {
+    "name": "vine-tomato",
+    "category": "vegetable"
+  },
+  "58": {
+    "name": "whiteonion",
+    "category": "vegetable"
+  },
+  "59": {
+    "name": "yam",
+    "category": "vegetable"
+  },
+  "60": {
+    "name": "yellow-bell-pepper",
+    "category": "vegetable"
+  },
+  "61": {
+    "name": "yellow-onion",
+    "category": "vegetable"
+  },
+  "62": {
+    "name": "almond-milk",
+    "category": "packaged_grocery"
+  },
+  "63": {
+    "name": "apple-juice",
+    "category": "packaged_grocery"
+  },
+  "64": {
+    "name": "apple-sauce",
+    "category": "packaged_grocery"
+  },
+  "65": {
+    "name": "bagels",
+    "category": "packaged_grocery"
+  },
+  "66": {
+    "name": "barbecue-sauce",
+    "category": "packaged_grocery"
+  },
+  "67": {
+    "name": "beans",
+    "category": "packaged_grocery"
+  },
+  "68": {
+    "name": "beans-green",
+    "category": "packaged_grocery"
+  },
+  "69": {
+    "name": "bread",
+    "category": "packaged_grocery"
+  },
+  "70": {
+    "name": "cashews",
+    "category": "packaged_grocery"
+  },
+  "71": {
+    "name": "cheese",
+    "category": "packaged_grocery"
+  },
+  "72": {
+    "name": "chips",
+    "category": "packaged_grocery"
+  },
+  "73": {
+    "name": "chocolate-syrup",
+    "category": "packaged_grocery"
+  },
+  "74": {
+    "name": "coconut-water",
+    "category": "packaged_grocery"
+  },
+  "75": {
+    "name": "coffee",
+    "category": "packaged_grocery"
+  },
+  "76": {
+    "name": "corn",
+    "category": "packaged_grocery"
+  },
+  "77": {
+    "name": "dip",
+    "category": "packaged_grocery"
+  },
+  "78": {
+    "name": "eggs",
+    "category": "packaged_grocery"
+  },
+  "79": {
+    "name": "eggs-in-cooler",
+    "category": "packaged_grocery"
+  },
+  "80": {
+    "name": "energy-drink",
+    "category": "packaged_grocery"
+  },
+  "81": {
+    "name": "gatorade",
+    "category": "packaged_grocery"
+  },
+  "82": {
+    "name": "ham",
+    "category": "packaged_grocery"
+  },
+  "83": {
+    "name": "ice-tea-gallon",
+    "category": "packaged_grocery"
+  },
+  "84": {
+    "name": "mayonnaise",
+    "category": "packaged_grocery"
+  },
+  "85": {
+    "name": "milk",
+    "category": "packaged_grocery"
+  },
+  "86": {
+    "name": "milk-in-cooler",
+    "category": "packaged_grocery"
+  },
+  "87": {
+    "name": "mixed-nuts",
+    "category": "packaged_grocery"
+  },
+  "88": {
+    "name": "oreos",
+    "category": "packaged_grocery"
+  },
+  "89": {
+    "name": "peanut-butter",
+    "category": "packaged_grocery"
+  },
+  "90": {
+    "name": "powerade",
+    "category": "packaged_grocery"
+  },
+  "91": {
+    "name": "pretzel",
+    "category": "packaged_grocery"
+  },
+  "92": {
+    "name": "ranch",
+    "category": "packaged_grocery"
+  },
+  "93": {
+    "name": "sugar",
+    "category": "packaged_grocery"
+  },
+  "94": {
+    "name": "tomato-ketchup",
+    "category": "packaged_grocery"
+  },
+  "95": {
+    "name": "tropicana-orange-juice",
+    "category": "packaged_grocery"
+  },
+  "96": {
+    "name": "vinegar",
+    "category": "packaged_grocery"
+  },
+  "97": {
+    "name": "vitamin-water",
+    "category": "packaged_grocery"
+  },
+  "98": {
+    "name": "water-gallon",
+    "category": "packaged_grocery"
+  },
+  "99": {
+    "name": "whip-cream",
+    "category": "packaged_grocery"
+  }
+}

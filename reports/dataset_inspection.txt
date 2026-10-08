@@ -1,0 +1,166 @@
+======================================================================
+3DGrocery100 Dataset Inspection Report
+======================================================================
+  Raw root                            C:\Users\anees\Desktop\Clubs\MISC\misc projects\Groceries Project Datasets\3DGrocery100
+
+======================================================================
+Files in dataset directory
+======================================================================
+  filelist.txt                                                 1.8 MB
+  modelnet100_shape_names.txt                                  0.0 MB
+  modelnet100_test.txt                                         1.4 MB
+  modelnet100_test_1024pts_fps.dat                           540.1 MB
+  modelnet100_train.txt                                        4.3 MB
+  modelnet100_train_1024pts_fps.dat                         1631.1 MB
+
+======================================================================
+Classes
+======================================================================
+  Number of classes                   100
+  Class list:
+      0: apple-fuji
+      1: apple-golden-delicious
+      2: apple-granny-smith
+      3: apple-honeycrisp
+      4: apple-evercrisp
+      5: apple-pazazz
+      6: apple-pink-lady
+      7: apple-red-delicious
+      8: apple-royal-gala
+      9: apple-wild-twist
+     10: avocado
+     11: banana
+     12: bartlett-pear
+     13: cantaloupe
+     14: coconut
+     15: coconut2
+     16: danjou-pear
+     17: dragonfruit
+     18: grapefruit
+     19: honeydew-melon
+     20: kiwi
+     21: lemon
+     22: lime
+     23: mango
+     24: navel-orange
+     25: nectarine
+     26: papaya
+     27: peach
+     28: pear-bosc
+     29: pineapple
+     30: plums
+     31: pomegranate
+     32: red-pear
+     33: watermelon
+     34: artichokes
+     35: broccoli
+     36: cucumber
+     37: eggplant
+     38: garlic
+     39: ginger
+     40: green-bell-pepper
+     41: green-cabbage
+     42: jalapeno
+     43: orange-bell-pepper
+     44: potato
+     45: red-bell-pepper
+     46: red-cabbage
+     47: redonion
+     48: red-potato
+     49: rutabagas
+     50: squash-acorn
+     51: squash-butternut
+     52: squash-spaghetti
+     53: squash-yellow
+     54: sweet-potato
+     55: tomato
+     56: turnip
+     57: vine-tomato
+     58: whiteonion
+     59: yam
+     60: yellow-bell-pepper
+     61: yellow-onion
+     62: almond-milk
+     63: apple-juice
+     64: apple-sauce
+     65: bagels
+     66: barbecue-sauce
+     67: beans
+     68: beans-green
+     69: bread
+     70: cashews
+     71: cheese
+     72: chips
+     73: chocolate-syrup
+     74: coconut-water
+     75: coffee
+     76: corn
+     77: dip
+     78: eggs
+     79: eggs-in-cooler
+     80: energy-drink
+     81: gatorade
+     82: ham
+     83: ice-tea-gallon
+     84: mayonnaise
+     85: milk
+     86: milk-in-cooler
+     87: mixed-nuts
+     88: oreos
+     89: peanut-butter
+     90: powerade
+     91: pretzel
+     92: ranch
+     93: sugar
+     94: tomato-ketchup
+     95: tropicana-orange-juice
+     96: vinegar
+     97: vitamin-water
+     98: water-gallon
+     99: whip-cream
+
+======================================================================
+Official Train/Test Split
+======================================================================
+  Train samples (from train.txt)      66032
+  Test  samples (from test.txt)       21866
+  Train classes                       100
+  Test  classes                       100
+  Sample ID format                    <class>=<UUID>_<class>_<frame_id>
+
+======================================================================
+Train .dat File
+======================================================================
+  File size                           1631.1 MB
+  Samples                             66032
+  Shapes observed                     [[1024, 6]]
+  Dtypes                              ['float32']
+  Channels (6 = XYZRGB)               [[1024, 6]]
+  Point count (min)                   1024
+  Point count (max)                   1024
+  Point count (mean)                  1024.0
+  Samples with NaN XYZ                0
+  Samples with Inf XYZ                0
+  XYZ global min                      [-0.9886969923973083, -0.9984999895095825, -0.9764339923858643]
+  XYZ global max                      [0.9968079924583435, 0.995934009552002, 0.9992960095405579]
+  RGB available                       True
+  RGB global min                      [0.0, 0.0, 0.0]
+  RGB global max                      [1.0, 1.0, 1.0]
+  Unique label IDs count              100
+  Label range                         [0, 99]
+
+======================================================================
+Test .dat File
+======================================================================
+  File size                           540.1 MB
+  Samples                             21866
+  Samples with NaN XYZ                0
+  Samples with Inf XYZ                0
+  Unique label IDs count              100
+
+======================================================================
+Cross-Checks
+======================================================================
+  PASS  train_txt_vs_dat_count_match
+  PASS  test_txt_vs_dat_count_match
+  PASS  n_classes_shape_names_vs_label_ids
